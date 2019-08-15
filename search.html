@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="student.css">
+</head>
+<style type="text/css">
+	section{
+  width: 50%;
+  float: left;
+  height: 600px;
+  background:black;
+  color:white;
+}
+.right{
+  width: 50%;
+  float: left;
+  height: 600px;
+  background: grey;
+}
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding:2px 2px;
+
+}
+
+img{
+	float: right; 
+	margin-top: 20px;
+	margin-right: 35%;
+}
+
+fieldset{
+	border:0;
+	margin-top: 20px;
+}
+</style>
+<body>
+<header>
+</header>
+<div class="main">
+  <section style="margin:auto;">
+  	<h2>Search Student's Info</h2>
+  	<div style=" padding: 20px;" >
+  <label class="col-sm-3">Name:</label>
+  <input type="text" name="name" class="col-sm-2"> <br>
+   <label class="col-sm-3">Roll Number:</label>
+  <input type="text" name="rollnum" class="col-sm-2" placeholder="  "> <br>
+   <label class="col-sm-3">Batch:</label>
+  <input type="text" name="batch" class="col-sm-2" placeholder="  "><br>
+   <label class="col-sm-3">Department:</label>
+  <input type="text" name="dept" class="col-sm-2" placeholder="  "><br>
+   <label class="col-sm-3">Skills:</label>
+  <input type="text" name="skills" class="col-sm-2" placeholder="  "><br>
+</div>
+</section>
+
+<aside class="right">
+  <img id="blah" src="http://placehold.it/180" class="img-thumbnail" alt="your image"/> <br>
+  <form class="form-horizontal" style="float: left; width: 70%; ">
+  <!-- For PErsonal Info -->
+  <fieldset style="margin-left: 110px; width: 100% ">
+    <legend>Student Details</legend>
+    <label for="Name" class="col-sm-4 col-form-label">Name: </label>
+    <label for="Name" class="col-sm-2 col-form-label">someone</label> <br>
+     <label for="RollNumber" class="col-sm-4 col-form-label">Roll Number: </label>
+    <label for="RollNumber" class="col-sm-2 col-form-label">1234</label> <br>
+      <label for="Department" class="col-sm-4 col-form-label">Department: </label>
+    <label for="Department" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Gender" class="col-sm-4 col-form-label">Gender: </label>
+     <label for="Gender" class="col-sm-2 col-form-label"> Male/Female</label> <br>
+    <label for="CNIC" class="col-sm-4 col-form-label">CNIC: </label>
+    <label for="CNIC" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Contact" class="col-sm-4 col-form-label">Contact Number: </label>
+    <label for="Contact" class="col-sm-1 col-form-label">someone</label> <br>
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Email:</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label">someone@example.com</label> <br>
+    <label for="Address" class="col-sm-4 col-form-label">Address: </label>
+    <label for="Address" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Address" class="col-sm-4 col-form-label">Skills: </label>
+    <label for="Address" class="col-sm-2 col-form-label">someone</label>
+    </fieldset>
+</form>
+</aside>
+  </div>
+
+  <footer>this is footer</footer>
+</body>
+</html>

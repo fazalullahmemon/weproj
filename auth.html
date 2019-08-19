@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <input type="email" name="email" id="email">
+    <input type="password" name="password" id="password">
+    <button type="button" onclick="onClick()">Sign in</button>
+</form>    
+<script>
+    var credentials = [
+        {
+            username: 'fazalullah.memon@unifiedcrest.com',
+            password: 'fazalullah'
+        },
+        {
+            username: 'tarique.jamali@unifiedcrest.com',
+            password: 'tarique'
+        }
+    
+    ]
+    
+    function onClick() {
+        var username = document.getElementById("email").value;
+        console.log(username);
+        var password = document.getElementById("password").value;
+        console.log(password);
+        for(var i = 0; i<credentials.length; i++) {
+            if(username === credentials[i].username && password === credentials[i].password) {
+                window.location="https://www.google.com.pk"
+                console.log('Login Succesful')
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
+

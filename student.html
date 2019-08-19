@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="student.css">
+  <link rel="stylesheet" type="text/css" href="student.css">
+  <script src="student.js"></script>
 </head>
+
 <body>
-<header>
-</header>
-<div class="main">
-  <section>
-  <form class="form-horizontal">
-  <!-- For PErsonal Info -->
-  <fieldset>
-    <legend>Personal Info</legend>
-    <label for="Name" class="col-sm-3 col-form-label">Name: </label>
-    <label for="Name" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="Father-Name" class="col-sm-3 col-form-label">Father Name: </label>
-    <label for="Father-Name" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="Surname" class="col-sm-3 col-form-label">Surname: </label>
-    <label for="Surname" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="Gender" class="col-sm-3 col-form-label">Gender: </label>
-     <label class="radio-inline col-sm-2">
-      <input type="radio" name="optradio" checked>Male
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Female </label> <br>
-    <label for="Nationality" class="col-sm-3 col-form-label">Nationality: </label>
-    <label for="Nationality" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="CNIC" class="col-sm-3 col-form-label">CNIC: </label>
-    <label for="CNIC" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="Contact" class="col-sm-3 col-form-label">Contact Number: </label>
-    <label for="Contact" class="col-sm-2 col-form-label">someone</label> <br>
-    <label for="inputEmail3" class="col-sm-3 col-form-label">Email:</label>
-    <label for="inputEmail3" class="col-sm-2 col-form-label">someone@example.com</label> <br>
-    <label for="Address" class="col-sm-3 col-form-label">Address: </label>
-    <label for="Address" class="col-sm-2 col-form-label">someone</label> <br>
-    </fieldset>
-<!-- Department Details -->
-  <fieldset>
-    <legend>Department Details</legend>
-    <label for="EnrollmentNumber" class="control-label col-sm-3">Enrollment Number: </label>
-    <label for="EnrollmentNumber" class="col-sm-2 form-control-static">1234</label> <br>
-    <label for="RollNumber" class="col-sm-3 col-form-label">Roll Number: </label>
-    <label for="RollNumber" class="col-sm-2 col-form-label">1234</label> <br>
-    <label for="Department" class="col-sm-3 col-form-label">Department: </label>
-    <label for="Department" class="col-sm-2 col-form-label">someone</label> <br>
-     <div class="form-group">
-    </fieldset>
+  <header>
+  </header>
+  <div class="main">
+    <section>
+      <form class="form-horizontal">
+        <!-- For PErsonal Info -->
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="Name" class="col-sm-3 col-form-label">Name: </label>
+          <label for="Name" class="col-sm-2 col-form-label" id="name"></label> <br>
+          <label for="Father-Name" class="col-sm-3 col-form-label">Father Name: </label>
+          <label for="Father-Name" class="col-sm-2 col-form-label" id="fatherName"></label> <br>
+          <label for="Surname" class="col-sm-3 col-form-label">Surname: </label>
+          <label for="Surname" class="col-sm-2 col-form-label" id="surname"></label> <br>
+          <label for="Gender" class="col-sm-3 col-form-label">Gender: </label>
+          <label class="radio-inline col-sm-2" id="gender">
+            Male
+          </label>
+          <br>
+          <label for="Nationality" class="col-sm-3 col-form-label">Nationality: </label>
+          <label for="Nationality" class="col-sm-2 col-form-label" id="nationality"></label> <br>
+          <label for="CNIC" class="col-sm-3 col-form-label">CNIC: </label>
+          <label for="CNIC" class="col-sm-2 col-form-label" id="cnic"></label> <br>
+          <label for="Contact" class="col-sm-3 col-form-label">Contact Number: </label>
+          <label for="Contact" class="col-sm-2 col-form-label" id="contact"></label> <br>
+          <label for="inputEmail3" class="col-sm-3 col-form-label">Email:</label>
+          <label for="inputEmail3" class="col-sm-2 col-form-label" id="email"></label> <br>
+          <label for="Address" class="col-sm-3 col-form-label">Address: </label>
+          <label for="Address" class="col-sm-2 col-form-label" id="address"></label> <br>
+        </fieldset>
+        <!-- Department Details -->
+        <fieldset>
+          <legend>Department Details</legend>
+          <label for="EnrollmentNumber" class="control-label col-sm-3">Enrollment Number: </label>
+          <label for="EnrollmentNumber" class="col-sm-2 form-control-static" id="enrollmentNumber"></label> <br>
+          <label for="RollNumber" class="col-sm-3 col-form-label">Roll Number: </label>
+          <label for="RollNumber" class="col-sm-2 col-form-label" id="rollNumber"></label> <br>
+          <label for="Department" class="col-sm-3 col-form-label">Department: </label>
+          <label for="Department" class="col-sm-2 col-form-label" id="department"></label> <br>
+          <div class="form-group">
+        </fieldset>
 
-  <!-- Qualifications -->
-  <fieldset>
-  	<legend>Results</legend>
-  	
+        <!-- Qualifications -->
+        <fieldset>
+          <legend>Results</legend>
 
-  </fieldset>
-</form>
-</section>
 
-<aside class="right">
-  <div  style="margin: 25%;" >
-    <img id="blah" src="http://placehold.it/180" class="img-thumbnail" alt="your image"/>
-    <form class="md-form" style="margin-top: 10px; margin-right: 50px;">
-  <div class="file-field">
-    <div class="btn btn-primary btn-sm float-left">
-      <input type="file" onchange="readURL(this);">
-    </div>
-  </div>
-</form>
+        </fieldset>
+      </form>
+    </section>
 
-<h1 style="margin-top: 50%;">Skills</h1>
-<div class="progress md-progress" style="height: 20px; width: 140%">
-	<span class="bg-primary">HTML</span>
-    <div class="progress-bar bg-primary"  role="progressbar" style="width: 25%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-</div>
-</div>
-</aside>
+    <aside class="right">
+      <div style="margin: 25%;">
+        <img id="studentdp" src="http://placehold.it/180" class="img-thumbnail" alt="your image" />
+        <form class="md-form" style="margin-top: 10px; margin-right: 50px;">
+          <div class="file-field">
+            <div class="btn btn-primary btn-sm float-left">
+              <input type="file" onchange="readURL(this);">
+            </div>
+          </div>
+        </form>
+
+        <h1 style="margin-top: 50%;">Skills</h1>
+        <div class="progress md-progress" style="height: 20px; width: 140%">
+          <span class="bg-primary">HTML</span>
+          <div class="progress-bar bg-primary" role="progressbar" style="width: 25%; height: 20px" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+      </div>
+    </aside>
   </div>
 
   <footer>this is footer</footer>
 </body>
+
 </html>
-<script >
-       function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+<script>
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result);
-                };
+      reader.onload = function (e) {
+        $('#blah')
+          .attr('src', e.target.result);
+      };
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-</script> 
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+</script>

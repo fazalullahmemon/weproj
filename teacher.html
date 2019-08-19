@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="student.css">
+<script src="teacher.js"></script>
 </head>
 <body>
 <header>
@@ -19,37 +20,35 @@
   <fieldset>
     <legend>Personal Info</legend>
     <label for="Name" class="col-sm-3 col-form-label">Name: </label>
-    <label for="Name" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Name" class="col-sm-2 col-form-label" id="name"></label> <br>
     <label for="Father-Name" class="col-sm-3 col-form-label">Father Name: </label>
-    <label for="Father-Name" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Father-Name" class="col-sm-2 col-form-label" id="fatherName"></label> <br>
     <label for="Surname" class="col-sm-3 col-form-label">Surname: </label>
-    <label for="Surname" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Surname" class="col-sm-2 col-form-label" id="surname"></label> <br>
     <label for="Gender" class="col-sm-3 col-form-label">Gender: </label>
-     <label class="radio-inline col-sm-2">
-      <input type="radio" name="optradio" checked>Male
+     <label class="radio-inline col-sm-2" id="gender">
+      Male
     </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Female </label> <br>
+    <br>
     <label for="Nationality" class="col-sm-3 col-form-label">Nationality: </label>
-    <label for="Nationality" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Nationality" class="col-sm-2 col-form-label" id="nationality"></label> <br>
     <label for="CNIC" class="col-sm-3 col-form-label">CNIC: </label>
-    <label for="CNIC" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="CNIC" class="col-sm-2 col-form-label" id="cnic"></label> <br>
     <label for="Contact" class="col-sm-3 col-form-label">Contact Number: </label>
-    <label for="Contact" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Contact" class="col-sm-2 col-form-label" id="contact"></label> <br>
     <label for="inputEmail3" class="col-sm-3 col-form-label">Email:</label>
-    <label for="inputEmail3" class="col-sm-2 col-form-label">someone@example.com</label> <br>
+    <label for="inputEmail3" class="col-sm-2 col-form-label" id="email"></label> <br>
     <label for="Address" class="col-sm-3 col-form-label">Address: </label>
-    <label for="Address" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Address" class="col-sm-2 col-form-label" id="address"></label> <br>
     </fieldset>
 <!-- Department Details -->
   <fieldset>
     <legend>Department Details</legend>
-    <label for="Name" class="control-label col-sm-3">Enrollment Number: </label>
-    <label for="Name" class="col-sm-2 form-control-static">1234</label> <br>
-    <label for="Father-Name" class="col-sm-3 col-form-label">Roll Number: </label>
-    <label for="Father-Name" class="col-sm-2 col-form-label">1234</label> <br>
+    <label for="Name" class="control-label col-sm-3">Employment Number: </label>
+    <label for="Name" class="col-sm-2 form-control-static" id="employmentNumber"></label> <br>
+    <br>
     <label for="Surname" class="col-sm-3 col-form-label">Department: </label>
-    <label for="Surname" class="col-sm-2 col-form-label">someone</label> <br>
+    <label for="Surname" class="col-sm-2 col-form-label" id="department"></label> <br>
      <div class="form-group">
     </fieldset>
 </form>
@@ -60,7 +59,7 @@
   <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;" id="teacherDp">
     </div>
     <div class="flip-card-back">
       <h1>John Doe</h1> 
